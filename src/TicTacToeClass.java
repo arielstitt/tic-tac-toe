@@ -43,12 +43,27 @@ public class TicTacToeClass {
 
     public boolean isValid(int row, int column) {
         // check the scope of the rows and columns
-        if (0 <= row
+        return 0 <= row
                 && row <= 2
                 && 0 <= column
-                && column <= 2) {
-            return true;
-        }
-        return false;
+                && column <= 2;
     }
+
+    public int getTurns() {
+        return turns;
+    }
+
+    public void setTurns(int turns) {
+        this.turns = turns;
+    }
+
+    public void displayBoard(){
+        System.out.println("  0  " + board[0][0] + "|" + board[0][1] + "|" + board[0][2]);
+		System.out.println("    --+-+--");
+		System.out.println("  1  " + board[1][0] + "|" + board[1][1] + "|" + board[1][2]);
+		System.out.println("    --+-+--");
+		System.out.println("  2  " + board[2][0] + "|" + board[2][1] + "|" + board[2][2]);
+		System.out.println("     0 1 2 ");
+    }
+    
 }
