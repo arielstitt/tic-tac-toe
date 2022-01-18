@@ -21,7 +21,7 @@ public class TicTacToeClass {
     }
 
     // check to see if player is the winner of the game
-    public boolean inWinner( char player){
+    public boolean isWinner( char player){
         
 
         //horizontal 
@@ -29,6 +29,18 @@ public class TicTacToeClass {
         //vertical
         
         return false;
+    }
+
+    //check if turns is equal to nine
+    public boolean isFull(){
+        return turns == 9;
+    }
+
+    //check if turns is equal to 9 and neither X or O is won
+    public boolean isCat(){
+        return turns == 9 
+            && !(isWinner('X')) 
+            && !(isWinner('O'));
     }
     
 }
