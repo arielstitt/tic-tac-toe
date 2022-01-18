@@ -13,19 +13,22 @@ public class TicTacToeClass {
         // number of turns starts at zero
         turns = 0;
 
-        // //looping through the board
-        // for (char[] row : board){
-        //     // then looping through 
-        //     for (char c : row){
-        //         c = ' ';
-        //         row = row;
-        // }
-
         for( int row = 0; row < 3; row++){
             for(int column = 0; column < 3; column ++){
                 board[row][column] = ' ';
             }
         }
+    }
+
+    // check to see if player is the winner of the game
+    public boolean inWinner( char player){
+        
+
+        //horizontal 
+        //diagnal
+        //vertical
+        
+        return false;
     }
     
 }
